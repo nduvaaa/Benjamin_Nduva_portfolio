@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Portfolio</title>
+    <SCript>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select the form and its input elements
+            const form = document.querySelector('form');
+            const nameInput = document.querySelector('#name');
+            const emailInput = document.querySelector('#email');
+            const messageInput = document.querySelector('#message');
+
+            // Listen for form submission
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the form from submitting the usual way
+
+                // Collect the values from the form
+                const name = nameInput.value;
+                const email = emailInput.value;
+                const message = messageInput.value;
+
+                // Display the collected information (For now, using console.log)
+                console.log('Name:', name);
+                console.log('Email:', email);
+                console.log('Message:', message);
+
+                // Optional: You can display the data as an alert (for testing purposes)
+                alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+                // Optionally clear the form after submission
+                form.reset();
+            });
+        });
+    </SCript>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left">
+            <a href="/">Luxon Osoro</a>
+        </div>
+
+        <div class="right">
+            <a href="http://github.com/LuxOsoro" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+
+            <a href="http://www.linkedin.com/in/luxon-osoro" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+
+            <a href="mailto:luxonosoro01@gmail.com.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- SECTION 1: Hero -->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Luxon 👋</h2>
+                <p>I am a passionate and skillful full stack developer who loves building seamless digital experiences.
+                    I design intuitive front-end interfaces, develop powerful back-end systems, and optimize databases
+                    for performance. Always eager to learn and solve complex problems, I thrive in collaborative
+                    environments and take pride in delivering high-quality, impactful work!</p>
+
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="PHOTO.jpg" alt="Luxon Osoro headshot">
+            </div>
+        </section>
+
+        <!-- SECTION 2: Skills -->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                I have developed strong full stack web development skills, mastering HTML, CSS, JavaScript, React,
+                Node.js, and MongoDB. I have built responsive front-end interfaces and efficient back-end APIs. I have
+                also gained experience with TypeScript, RESTful API integration, cloud deployment, Git version control,
+                Agile methodologies (SCRUM), and professional interview preparation.
+
+
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="html-logo.webp" alt="html logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="css-logo.webp" alt="css logo">
+                    <span>CSS</span>
+                </div>
+
+                <div class="cell">
+                    <img src="javascript-logo.webp" alt="javascript logo">
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="cell">
+                    <img src="node-logo.webp" alt="node logo">
+                    <span>Node.js</span>
+                </div>
+
+                <div class="cell">
+                    <img src="react-logo.webp" alt="react logo">
+                    <span>React.js</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Testimony -->
+        <section id="testimony" class="testimony-section">
+            <h2>Testimony</h2>
+            <div class="group">
+                <div class="person-details">
+                    <img src="PHOTO.jpg" alt="Luxon Osoro headshot"
+                        style="width: 100%; height: auto; object-fit: cover;">
+                    <p>Luxon Osoro</p>
+                    <p>I am a passionate and skillful full stack developer.</p>
+                </div>
+
+                <div class="text">
+                    I am a passionate and skillful full stack developer who thrives on creating seamless, high-impact
+                    digital experiences. I design intuitive front-end interfaces, build powerful back-end systems, and
+                    optimize databases for maximum performance. Through my journey, I have developed strong full stack
+                    expertise, mastering technologies like HTML, CSS, JavaScript, React, Node.js, and MongoDB. I have
+                    built responsive front-end applications and efficient, scalable back-end APIs. Additionally, I have
+                    gained experience with TypeScript, RESTful API integration, cloud deployment, Git version control,
+                    and Agile methodologies (SCRUM). I am always eager to learn, solve complex challenges, and
+                    collaborate with teams to deliver high-quality, user-focused solutions.
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- SECTION 4: Contact -->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    As a Full Stack Developer, I specialize in building responsive front-end interfaces and scalable
+                    back-end systems. If you have a project or need development assistance, don’t hesitate to reach out.
+                    Let’s create something great together!
+
+
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
