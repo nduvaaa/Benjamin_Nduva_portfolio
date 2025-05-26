@@ -245,6 +245,23 @@ nav .right a span {
 .contact-section .group form button:hover {
   filter: brightness(0.9);
 }
+.video-placeholder {
+      width: 640px;
+      height: 360px;
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      font-size: 1.5rem;
+      border: 2px dashed #999;
+      position: relative;
+    }
+    .play-icon {
+      position: absolute;
+      font-size: 3rem;
+      color: #555;
+    }
 
 @media (max-width: 850px) {
   /* SECTION 1: Hero */
